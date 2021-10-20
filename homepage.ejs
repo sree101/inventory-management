@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+	<title>Mobiles</title>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="c1"><b>HappiMobiles Inventory Management System</b></h1><br>
+	
+	<h3><a href="/AddProduct" class="c2">Add New Product</a></h3>
+        <div class="dropdown">
+        <button class="update"><b>Update Product</b></button>
+        <div class="dropdown-content">
+            <a href="/updatestock"><b>Stock</b></a>
+            <a href="/updateprice"><b>Price</b></a>
+        </div>
+        </div>
+	<h3><a href="/deleteproduct" class="c2">Delete Product</a></h3><br>
+
+        <p><font size="6" color="red"><b>Welcome!</b></font></p>
+        
+        <p><font size="4">"Happi Mobiles", 
+ Happi Mobiles - an online mobile store, is a one-stop solution for all your Mobiles, 
+ Tablets, Mobile Accessories, & Appliances requirements, having its presence in both 
+ Telugu states i.e., AP & Telangana. To say proudly, we are close to our 60+ stores in a 
+ span of 24 months with 10,00,000+ Happi customers. The belief of the customer and 
+ satisfaction of the customer are the two factors which drive us to deliver impeccable 
+ services across our stores located in Ananthapur, Kurnool, Mahbubnagar, Warangal, 
+ Sangareddy, Bhimavaram, Rajahmundry, Karimnagar, Nalgonda, Guntur, Adilabad, Nizamabad, 
+ Siddipet, Hyderabad, Visakhapatnam, Srikakulam, Ongole, Vijayawada, and the list goes on.
+ </p>
+ <p>Since now is the trend of online shopping, Happi mobiles bought you the shopping 
+ platform where you can buy the latest mobile phones online at your convenience. 
+ Be it Samsung mobiles, Apple mobiles, android phones or dual sim phones, or whichever 
+ brand it is, "you name it and have it".</font></p>
+        <center>
+        <table class="table">
+        <tr>
+           <th>Product ID&nbsp</th>
+           <th>Category&nbsp</th>
+           <th>Model&nbsp</th>
+           <th>Colour&nbsp</th>
+           <th>Stock&nbsp</th>
+           <th>Price</th>
+        <tr>
+      <% for(var i=0;i<data.length;i++) { %>
+        <tr>
+            <td><%= data[i].pid %></td>
+            <td><%= data[i].pcat %></td>
+            <td><%= data[i].pmodel %></td>
+            <td><%= data[i].pcolor %></td>
+            <td><%= data[i].pstock %></td>
+            <td><%= data[i].sp %></td>
+        </tr>
+        <% } %>
+        </table></center>
+    
+</body>
+</html>
