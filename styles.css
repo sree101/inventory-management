@@ -1,0 +1,99 @@
+.c1
+{
+    text-align : center;
+    background-color : #ff9999;
+    padding : 7px;
+    border-radius:6px;
+    font-family:cursive;
+    color:#4d4d4d;
+}
+
+.c2
+{
+    background-color : #b3e0ff;
+    color : black;
+    text-decoration : none;
+    padding : 7px;
+    border-radius : 7px;
+    font-size : 23px;
+}
+.c2:hover {background-color :  #b3ffd9;}
+
+.update
+{
+    background-color : #b3e0ff;
+    color : black;
+    border : none;
+    font-size : 22px;
+    font-family: "Times New Roman", Times, serif;
+    padding:7px;
+    border-radius : 7px;
+}
+.update:hover { background-color:#b3ffd9;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 110px;
+}
+.dropdown-content a {
+  background-color:#b3e0ff;
+  color: black;
+  padding: 7px;
+ border-radius : 7px;
+  text-decoration: none;
+  display: block;
+  font-size : 20px;
+}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content a:hover {background-color: #ccffe6;}
+
+.table
+{
+   align : center;
+   border-collapse : collapse;
+   border : 3px solid black;
+   width:48%;
+   
+}
+th
+{
+    padding:7px;
+    color : #ff1a75;
+    background-color:#ffffe6;
+    font-size:25px;
+    border:1px solid black;
+}
+td
+{
+    border:1px solid black;
+    text-align:center;
+    padding : 15px;
+    font-size:20;
+}
+tr:nth-child(even) 
+{
+   background-color:#d9d9d9;
+}
+tr:nth-child(odd)
+{
+    background-color:#f2f2f2;
+} 
+input
+{
+    height:30px;
+    padding:5px;
+    width:200px;
+}
+.button
+{
+    height:35px;
+    width:90px;
+    padding:3px;
+    font-size:18px;
+}
