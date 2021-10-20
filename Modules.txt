@@ -1,0 +1,4 @@
+EXPRESS -- npm install express
+MONGODB -- npm instal mongodb@3.6.6
+EJS     -- npm install ejs
+NODEMON -- npm install -g nodemon
